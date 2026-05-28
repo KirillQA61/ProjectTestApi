@@ -1,9 +1,0 @@
-# created by virtualenv automatically
-__pycache__/
-*.pyc
-.venv/
-env/
-.idea/
-*.log
-.env
-
