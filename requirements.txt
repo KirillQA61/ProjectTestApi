@@ -1,0 +1,5 @@
+pytest==8.3.3
+requests==2.32.3
+pydantic==1.10.13
+allure-pytest==2.13.2
+python-dotenv==1.0.1

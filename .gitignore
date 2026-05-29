@@ -1,9 +1,23 @@
-# created by virtualenv automatically
+# Python
 __pycache__/
-*.pyc
-.venv/
-env/
-.idea/
-*.log
-.env
+*.py[cod]
+*$py.class
+*.so
 
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# PyCharm
+.idea/
+*.iml
+
+# Тесты и отчёты
+.pytest_cache/
+.allure-results/
+*.log
+
+# Секреты
+.env
+*.key
