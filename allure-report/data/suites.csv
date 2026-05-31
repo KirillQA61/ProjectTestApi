@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Проверка получения полного списка бронирований","749","Получить все бронирования без фильтров","tests","2026-05-31","passed","2026-05-31","TestGetBookingIDs","test_get_booking_ids","",""
