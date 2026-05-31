@@ -3,10 +3,13 @@ import pytest
 from services.bookings.api import BookingsAPI
 
 @allure.epic("Restful Booker API")
-@allure.feature("Bookings API")
-@allure.story("GET: Поиск бронирований")
-@allure.severity(allure.severity_level.CRITICAL)
+@allure.feature("Bookings")
+@allure.story("Получение списка бронирований")
 class TestGetBookingIDs:
+
+    @allure.title("Получить список всех бронирований")
+    @allure.description("Проверка GET /booking без параметров фильтрации")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_get_all_booking_ids_success(self, public_headers):
         api_client = BookingsAPI(public_headers=public_headers)
 

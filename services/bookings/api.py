@@ -61,7 +61,7 @@ class BookingsAPI:
 
         allure.attach(
             body=f"Status: {response.status_code}\nBody: {response.text}",
-            name="📥 Response",
+            name="Response",
             attachment_type=allure.attachment_type.TEXT
         )
 
