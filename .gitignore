@@ -21,3 +21,7 @@ env/
 # Секреты
 .env
 *.key
+
+# Allure reports
+allure-report/
+allure-results/
