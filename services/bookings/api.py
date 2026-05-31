@@ -45,10 +45,27 @@ class BookingsAPI:
         return response
 
     @allure.step("Get Booking")
-    def get_booking(self):
-        response = requests.get(
-            ...
+    def get_booking_by_id(self, booking_id: int):
+        url = f"{self.endpoints.BASE_URL}{self.endpoints.booking_by_id_url}{booking_id}"
+
+        allure.attach(
+            body=f"URL: {url}",
+            name="Request",
+            attachment_type=allure.attachment_type.TEXT
         )
+
+        response = requests.get(
+            url=url,
+            headers=self.public_headers
+        )
+
+        allure.attach(
+            body=f"Status: {response.status_code}\nBody: {response.text}",
+            name="📥 Response",
+            attachment_type=allure.attachment_type.TEXT
+        )
+
+        return response
 
     @allure.step("Сreate Booking")
     def create_booking(self):
